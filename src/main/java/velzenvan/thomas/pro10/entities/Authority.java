@@ -1,6 +1,8 @@
 package velzenvan.thomas.pro10.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import velzenvan.thomas.pro10.models.Role;
 
 import java.util.UUID;

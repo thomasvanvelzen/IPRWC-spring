@@ -1,4 +1,4 @@
-package com.poc.service;
+package velzenvan.thomas.pro10.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,9 +9,8 @@ import velzenvan.thomas.pro10.entities.Profile;
 import velzenvan.thomas.pro10.entities.User;
 import velzenvan.thomas.pro10.models.Role;
 import velzenvan.thomas.pro10.repositories.UserRepository;
-import velzenvan.thomas.pro10.services.IUserService;
-import velzenvan.thomas.pro10.util.TokenUtil;
 import velzenvan.thomas.pro10.util.EncryptionUtil;
+import velzenvan.thomas.pro10.util.TokenUtil;
 
 import java.util.UUID;
 
