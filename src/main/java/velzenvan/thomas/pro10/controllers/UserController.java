@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import velzenvan.thomas.pro10.entities.User;
 import velzenvan.thomas.pro10.services.IUserService;
-
+@CrossOrigin(maxAge = 3600)
 @RestController
 public class UserController {
 

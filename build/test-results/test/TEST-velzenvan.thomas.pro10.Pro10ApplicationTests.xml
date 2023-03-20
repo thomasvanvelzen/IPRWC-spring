@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="velzenvan.thomas.pro10.Pro10ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-20T10:06:53" hostname="Thomass-MacBook-Pro.local" time="0.059">
+  <properties/>
+  <testcase name="contextLoads()" classname="velzenvan.thomas.pro10.Pro10ApplicationTests" time="0.059"/>
+  <system-out><![CDATA[11:06:48.357 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [Pro10ApplicationTests]: using SpringBootContextLoader
+11:06:48.359 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [velzenvan.thomas.pro10.Pro10ApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:06:48.359 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [velzenvan.thomas.pro10.Pro10ApplicationTests]: Pro10ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:06:48.368 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [Pro10ApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+11:06:48.393 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/thomasvanvelzen/Desktop/IPRWC-spring/build/classes/java/main/velzenvan/thomas/pro10/Pro10Application.class]
+11:06:48.394 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration velzenvan.thomas.pro10.Pro10Application for test class velzenvan.thomas.pro10.Pro10ApplicationTests
+11:06:48.425 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [Pro10ApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+11:06:48.425 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [Pro10ApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::             (v3.1.0-M1)
+
+2023-03-20T11:06:48.512+01:00  INFO 48135 --- [    Test worker] v.thomas.pro10.Pro10ApplicationTests     : Starting Pro10ApplicationTests using Java 19.0.2 with PID 48135 (started by thomasvanvelzen in /Users/thomasvanvelzen/Desktop/IPRWC-spring)
+2023-03-20T11:06:48.512+01:00  INFO 48135 --- [    Test worker] v.thomas.pro10.Pro10ApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2023-03-20T11:06:48.699+01:00  INFO 48135 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-20T11:06:48.718+01:00  INFO 48135 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 4 JPA repository interfaces.
+2023-03-20T11:06:48.868+01:00  INFO 48135 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-20T11:06:48.883+01:00  INFO 48135 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-03-20T11:06:48.972+01:00  INFO 48135 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-20T11:06:51.302+01:00  INFO 48135 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1657b017
+2023-03-20T11:06:51.304+01:00  INFO 48135 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-20T11:06:51.315+01:00  WARN 48135 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 5.0.0 version for [org.hibernate.dialect.MySQL5Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-03-20T11:06:51.316+01:00  INFO 48135 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-03-20T11:06:51.317+01:00  WARN 48135 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-03-20T11:06:53.082+01:00  INFO 48135 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-20T11:06:53.091+01:00  INFO 48135 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-20T11:06:53.229+01:00  WARN 48135 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-20T11:06:53.394+01:00  INFO 48135 --- [    Test worker] v.thomas.pro10.Pro10ApplicationTests     : Started Pro10ApplicationTests in 4.955 seconds (process running for 5.355)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
