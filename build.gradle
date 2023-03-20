@@ -1,7 +1,7 @@
 buildscript {
 	repositories {
 		jcenter {
-			url "http://jcenter.bintray.com/"
+			url "https://jcenter.bintray.com/"
 		}
 	}
 }
@@ -16,7 +16,7 @@ plugins {
 allprojects {
 	repositories {
 		jcenter {
-			url "http://jcenter.bintray.com/"
+			url "https://jcenter.bintray.com/"
 		}
 	}
 }
