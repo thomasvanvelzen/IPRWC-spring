@@ -6,7 +6,7 @@ import velzenvan.thomas.pro10.entities.Profile;
 import velzenvan.thomas.pro10.services.IProfileService;
 
 import java.util.UUID;
-@CrossOrigin(maxAge = 3600)
+@CrossOrigin()
 @RestController
 public class ProfileController {
 

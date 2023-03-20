@@ -9,7 +9,7 @@ import velzenvan.thomas.pro10.services.IAuthorityService;
 
 import java.util.UUID;
 
-@CrossOrigin(maxAge = 3600)
+@CrossOrigin()
 @RestController
 public class AuthorityController {
 

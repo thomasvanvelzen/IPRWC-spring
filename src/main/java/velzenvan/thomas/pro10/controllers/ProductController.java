@@ -6,7 +6,7 @@ import velzenvan.thomas.pro10.entities.Product;
 import velzenvan.thomas.pro10.services.IProductService;
 
 import java.util.UUID;
-@CrossOrigin(maxAge = 3600)
+@CrossOrigin()
 @RestController
 public class ProductController {
 
