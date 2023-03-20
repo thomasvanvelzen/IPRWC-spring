@@ -1,5 +1,21 @@
+buildscript {
+	repositories {
+		jcenter {
+			url "http://jcenter.bintray.com/"
+		}
+	}
+}
+
+allprojects {
+	repositories {
+		jcenter {
+			url "http://jcenter.bintray.com/"
+		}
+	}
+}
+
 plugins {
-	id 'java'
+	id 'java' 
 	id 'org.springframework.boot' version '3.1.0-M1'
 	id 'io.spring.dependency-management' version '1.1.0'
 }
@@ -37,18 +53,4 @@ jar {
 	}
 }
 
-buildscript {
-	repositories {
-		jcenter {
-			url "http://jcenter.bintray.com/"
-		}
-	}
-}
 
-allprojects {
-	repositories {
-		jcenter {
-			url "http://jcenter.bintray.com/"
-		}
-	}
-}
