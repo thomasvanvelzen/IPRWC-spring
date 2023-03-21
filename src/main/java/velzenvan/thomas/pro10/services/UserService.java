@@ -32,6 +32,9 @@ public class UserService implements IUserService {
 
     @Override
     public User register(User user) throws Exception {
+        if (repository.findByEmail(user.getEmail()).size() > 0) {
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Email already in use");
+        }
         UUID uuid = UUID.randomUUID();
         user.setId(uuid);
         String encryptedPassword = encryption.encrypt(user.getPassword());
