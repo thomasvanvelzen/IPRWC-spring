@@ -34,6 +34,19 @@ public class ProductController {
             @RequestBody Product product,
             @RequestHeader(ROLE_TOKEN_HEADER) String roleToken,
             @RequestHeader(USER_ID_HEADER) String stringUserId) throws Exception {
+
+        if(product.getName() == null || product.getName().isEmpty()) {
+            throw new Exception("Product name is required");
+        }
+
+        if(product.getPrice() < 0) {
+            throw new Exception("Product price must be higher than 0");
+        }
+
+        if(product.getDescription() == null || product.getDescription().isEmpty()) {
+            throw new Exception("Product description is required");
+        }
+        
         UUID userId = UUID.fromString(stringUserId);
         service.save(product, roleToken, userId);
         return service.findAll();
