@@ -30,7 +30,7 @@ public class ProductController {
 
     @PostMapping("/product")
     @ResponseBody
-    public Iterable<Product> createProduct(
+    public void createProduct(
             @RequestBody Product product,
             @RequestHeader(ROLE_TOKEN_HEADER) String roleToken,
             @RequestHeader(USER_ID_HEADER) String stringUserId) throws Exception {
@@ -48,6 +48,6 @@ public class ProductController {
         }
 
         UUID userId = UUID.fromString(stringUserId);
-        return service.save(product, roleToken, userId);
+        service.save(product, roleToken, userId);
     }
 }
