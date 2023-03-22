@@ -18,9 +18,10 @@ public class ProductService implements IProductService {
     private AuthUtil auth;
 
     @Override
-    public void save(Product product, String roleToken, UUID userId) throws Exception {
+    public Iterable<Product> save(Product product, String roleToken, UUID userId) throws Exception {
         auth.authorize(userId, roleToken, Role.CUSTOMER);
         repository.save(product);
+        return repository.findAll();
     }
 
     @Override

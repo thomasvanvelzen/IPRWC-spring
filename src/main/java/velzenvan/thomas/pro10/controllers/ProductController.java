@@ -46,9 +46,8 @@ public class ProductController {
         if(product.getDescription() == null || product.getDescription().isEmpty()) {
             throw new Exception("Product description is required");
         }
-        
+
         UUID userId = UUID.fromString(stringUserId);
-        service.save(product, roleToken, userId);
-        return service.findAll();
+        return service.save(product, roleToken, userId);
     }
 }
